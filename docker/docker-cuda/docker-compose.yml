@@ -27,6 +27,7 @@ services:
     shm_size: '16gb'
     stdin_open: true
     command: [
+      'cd', '/app', '&&',
       'pip', 'install', '-e', '".[torch,metrics,deepspeed,bitsandbytes,hqq,eetq,vllm]"',
       'llamafactory-cli', 'webui'
     ]
