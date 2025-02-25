@@ -27,10 +27,8 @@ services:
     shm_size: '16gb'
     stdin_open: true
     command: [
-      "/bin/bash",
-      "echo", '"---------- LLaMA Factory started by Vortez ----------"',
       'pip', 'install', '-e', '".[torch,metrics,deepspeed,bitsandbytes,hqq,eetq,vllm]"',
-      'llamafactory-cli', 'webui',
+      'llamafactory-cli', 'webui'
     ]
     deploy:
       resources:
