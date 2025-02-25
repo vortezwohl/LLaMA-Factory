@@ -8,11 +8,11 @@ services:
         INSTALL_VLLM: true
         INSTALL_DEEPSPEED: true
         INSTALL_FLASHATTN: true
-        INSTALL_LIGER_KERNEL: true
+        INSTALL_LIGER_KERNEL: false
         INSTALL_HQQ: true
         INSTALL_EETQ: true
         PIP_INDEX: https://pypi.org/simple
-    container_name: llamafactory-custom
+    container_name: llamafactory-vortez
     volumes:
       - ../../hf_cache:/root/.cache/huggingface
       - ../../ms_cache:/root/.cache/modelscope

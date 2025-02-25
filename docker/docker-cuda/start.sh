@@ -1,4 +1,4 @@
 /bin/bash
 echo '---------- LLaMA Factory started by Vortez ---------- '
-pip install -e ".[torch,metrics,deepspeed,liger-kernel,bitsandbytes,hqq,eetq,vllm,galore,apollo,badam,modelscope,openmind,swanlab]"
+pip install -e ".[torch,metrics,deepspeed,bitsandbytes,hqq,eetq,vllm]"
 llamafactory-cli webui
