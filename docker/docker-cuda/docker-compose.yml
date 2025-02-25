@@ -26,7 +26,7 @@ services:
     tty: true
     shm_size: '16gb'
     stdin_open: true
-    command: ['llamafactory-cli', 'webui']
+    command: bash
     deploy:
       resources:
         reservations:
