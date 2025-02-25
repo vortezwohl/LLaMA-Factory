@@ -1,6 +1,6 @@
 # Default use the NVIDIA official image with PyTorch 2.3.0
 # https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/index.html
-ARG BASE_IMAGE=nvcr.io/nvidia/pytorch:24.02-py3
+ARG BASE_IMAGE=ngc.nju.edu.cn/nvidia/pytorch:24.02-py3
 FROM ${BASE_IMAGE}
 
 # Define environments
@@ -9,13 +9,13 @@ ENV FLASH_ATTENTION_FORCE_BUILD=TRUE
 ENV VLLM_WORKER_MULTIPROC_METHOD=spawn
 
 # Define installation arguments
-ARG INSTALL_BNB=false
-ARG INSTALL_VLLM=false
-ARG INSTALL_DEEPSPEED=false
-ARG INSTALL_FLASHATTN=false
-ARG INSTALL_LIGER_KERNEL=false
-ARG INSTALL_HQQ=false
-ARG INSTALL_EETQ=false
+ARG INSTALL_BNB=true
+ARG INSTALL_VLLM=true
+ARG INSTALL_DEEPSPEED=true
+ARG INSTALL_FLASHATTN=true
+ARG INSTALL_LIGER_KERNEL=true
+ARG INSTALL_HQQ=true
+ARG INSTALL_EETQ=true
 ARG PIP_INDEX=https://pypi.org/simple
 ARG HTTP_PROXY=
 
