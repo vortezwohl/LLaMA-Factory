@@ -23,6 +23,7 @@ services:
     ports:
       - "7886:7860"
       - "8600:8000"
+      - "8888:8888"
     ipc: host
     tty: true
     shm_size: '16gb'
