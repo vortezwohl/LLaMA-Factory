@@ -1,4 +1,10 @@
 {
+  "script_review_alpaca_changdu": {
+    "file_name": "script_review_alpaca.json"
+  },
+  "script_review_alpaca_changdu_simplified": {
+    "file_name": "script_review_alpaca_simplified.json"
+  },
   "identity": {
     "file_name": "identity.json"
   },
