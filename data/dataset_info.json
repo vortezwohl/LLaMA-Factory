@@ -5,6 +5,12 @@
   "script_review_alpaca_changdu_simplified": {
     "file_name": "script_review_alpaca_simplified.json"
   },
+  "script_review_alpaca_changdu_new_simplified": {
+    "file_name": "script_review_alpaca_2025-02-28-19-01-57.json"
+  },
+  "script_review_dpo_changdu_new_simplified": {
+    "file_name": "script_review_dpo_2025-02-28-19-01-57.json"
+  },
   "identity": {
     "file_name": "identity.json"
   },
