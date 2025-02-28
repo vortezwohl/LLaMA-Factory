@@ -11,6 +11,12 @@
   "script_review_dpo_changdu_new_simplified": {
     "file_name": "script_review_dpo_2025-02-28-19-19-54.json"
   },
+  "script_review_dpo_changdu_new_simplified_80_per_train": {
+    "file_name": "script_review_alpaca_train_2025-02-28-21-46-29.json"
+  },
+  "script_review_dpo_changdu_new_simplified_20_per_test": {
+    "file_name": "script_review_alpaca_test_2025-02-28-21-48-30.json"
+  },
   "identity": {
     "file_name": "identity.json"
   },
