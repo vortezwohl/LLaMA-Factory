@@ -4,7 +4,7 @@ from huggingface_hub import HfApi
 
 api = HfApi()
 token = os.getenv('HF_TOKEN', '')
-repo_id = "vortezwohl/qwen2.5-3b-drama-script-review"
+repo_id = "vortezwohl/DeepSeek-V3-7B-Drama-Script-Review"
 local_dir = sys.argv[1]
 
 api.upload_folder(
