@@ -12,7 +12,7 @@ services:
         INSTALL_HQQ: "false"
         INSTALL_EETQ: "false"
         PIP_INDEX: https://pypi.org/simple
-    container_name: llamafactory-custom
+    container_name: llamafactory-changdu
     volumes:
       - ../../hf_cache:/root/.cache/huggingface
       - ../../ms_cache:/root/.cache/modelscope
@@ -21,13 +21,16 @@ services:
       - ../../output:/app/output
       - ../../saves:/app/saves
     ports:
-      - "7860:7860"
-      - "8000:8000"
+      - "7886:7860"
+      - "8600:8000"
+      - "8887:8887"
+      - "8888:8888"
+      - "8889:8889"
     ipc: host
     tty: true
     shm_size: "16gb"
     stdin_open: true
-    command: bash
+    command: ['export', 'HF_ENDPOINT="https://hf-mirror.com"', '&&', 'bash', '&&', 'pip install -e .', '&&', 'llamafactory-cli webui']
     deploy:
       resources:
         reservations:
